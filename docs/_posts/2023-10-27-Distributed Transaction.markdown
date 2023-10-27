@@ -7,7 +7,7 @@ categories: jekyll update
 
 ## Distributed Transactions
 
-統整一下在找尋關於Distributed Transactions這個問題的理論與業界解法．
+Aggregate the infos about Distributed Transactions
 
 ---
 ### Two Phase Commit (2PC)
@@ -53,8 +53,8 @@ An inter-bank transfer is a typical distributed transaction scenario, where A ne
 
 ---
 ### Reference
-- [1] Building Microservices, 2nd Edition -- Ch.6 Workload
-- [2] Database Internals -- Ch13 Distributed Transactions
+- [1] [Building Microservices, 2nd Edition -- Ch.6 Workload](https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/)
+- [2] [Database Internals -- Ch13 Distributed Transactions](https://learning.oreilly.com/library/view/database-internals/9781492040330/)
 - [3] [THE LIMITS OF THE SAGA PATTERN](https://www.ufried.com/blog/limits_of_saga_pattern)
 - [4] [Distributed Transactions & Two-phase Commit by Animesh Gaitonde](https://medium.com/geekculture/distributed-transactions-two-phase-commit-c82752d69324)
 - [5] DTM : DTM is a distributed transaction framework by GoLang
