@@ -16,18 +16,18 @@ categories: jekyll update
 - Prepare : If a cohort decides that it can commit, it notifies the coordinator about the positive vote.
 - Commit/abort : If even one of the cohorts votes to abort the transaction, the coordinator sends the Abort message to all of them.
 
-![2PC_n.png](img/2023-10-27-Distributed%20Transaction/2PC_n.png)
+![2PC_n.png](https://hongjhih77.github.io/img/2023-10-27-Distributed%20Transaction/2PC_n.png)
 
 #### Cohort Failures in 2PC
-![2PC_cf.png](../img/2023-10-27-Distributed%20Transaction/2PC_cf.png)
+![2PC_cf.png](https://hongjhih77.github.io/img/2023-10-27-Distributed%20Transaction/2PC_cf.png)
 
 #### Coordinator Failures in 2PC
 
 One of the cohorts does not receive a commit or abort command from the coordinator during the second phase
-![2PC_lf.png](../img/2023-10-27-Distributed%20Transaction/2PC_lf.png)
+![2PC_lf.png](https://hongjhih77.github.io/img/2023-10-27-Distributed%20Transaction/2PC_lf.png)
 
 The coordinator fails after collecting the votes, but before broadcasting vote results, the cohorts end up in a state of uncertainty.
-![2PC_lf_after_v.png](../img/2023-10-27-Distributed%20Transaction/2PC_lf_after_v.png)
+![2PC_lf_after_v.png](https://hongjhih77.github.io/img/2023-10-27-Distributed%20Transaction/2PC_lf_after_v.png)
 
 #### Cons
 - Latency: The more participants you have, and the more latency you have in the system.
@@ -41,15 +41,15 @@ Business Scenario example using [DTM](https://en.dtm.pub/practice/msg.html#succe
 
 An inter-bank transfer is a typical distributed transaction scenario, where A needs to transfer money across a bank to B. Suppose that only the transfer from A may fail and the transfer to B is able to eventually succeed
 
-![2PC_ex_n.png](../img/2023-10-27-Distributed%20Transaction/2PC_ex_n.png)
+![2PC_ex_n.png](https://hongjhih77.github.io/img/2023-10-27-Distributed%20Transaction/2PC_ex_n.png)
 
 #####  Crash after commit
-![2PC_ex_crash_after_commit.png](../img/2023-10-27-Distributed%20Transaction/2PC_ex_crash_after_commit.png)
+![2PC_ex_crash_after_commit.png](https://hongjhih77.github.io/img/2023-10-27-Distributed%20Transaction/2PC_ex_crash_after_commit.png)
 
 > [My Note] Idempotence when retrying need to be applied.
 
 ##### Crash before commit
-![2PC_ex_crash_before_commit.png](../img/2023-10-27-Distributed%20Transaction/2PC_ex_crash_before_commit.png)
+![2PC_ex_crash_before_commit.png](https://hongjhih77.github.io/img/2023-10-27-Distributed%20Transaction/2PC_ex_crash_before_commit.png)
 
 ---
 ### Reference
